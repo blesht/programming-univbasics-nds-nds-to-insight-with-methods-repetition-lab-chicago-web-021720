@@ -41,7 +41,7 @@ def total_gross(source)
  row_index = 0 
  
  while row_index < directors.length do 
-   total += total_by_director[directors]
+   total += total_by_director[directors][row_index]
    row_index += 1 
  end 
  total 
