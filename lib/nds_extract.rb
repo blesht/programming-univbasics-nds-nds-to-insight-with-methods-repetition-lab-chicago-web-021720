@@ -26,7 +26,9 @@ end
 
 def list_of_directors(source)
   dirlist = []
-  file = 
+  file = File.Open("dir.rb", "w")
+  file << source 
+  file.close 
   
 end
 
