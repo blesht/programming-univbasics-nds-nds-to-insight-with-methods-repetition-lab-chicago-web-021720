@@ -26,10 +26,12 @@ end
 
 def list_of_directors(source)
   dirlist = []
-  file = File.Open("dir.rb", "w")
-  file << source 
-  file.close 
-  
+  row_index = 0 
+  while row_index < source.length do 
+  dirlist << source[row_index][:name]
+  row_index += 1 
+  end 
+  dirlist 
 end
 
 def total_gross(source)
