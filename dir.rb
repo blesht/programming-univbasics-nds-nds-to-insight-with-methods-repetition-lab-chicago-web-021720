@@ -273,32 +273,8 @@ def list_of_directors(source)
   dirlist << source[row_index][:name]
   row_index += 1 
   end 
-  p dirlist 
+   dirlist 
 end
 
-list_of_directors(vm)
-def gross_for_director(d)
-  total = 0
-  index = 0
-
-  while index < d[:movies].length do
-    total += d[:movies][index][:worldwide_gross]
-    index += 1
-  end
-
-  total
-end
-
-
-def directors_totals(source)
-  result = {}
-  director_index = 0
-  while director_index < source.size do
-    director = source[director_index]
-    result[director[:name]] = gross_for_director(director)
-    director_index += 1
-  end
-  puts result
-end
-
-directors_totals(vm)
+do = list_of_directors(vm)
+puts do 
