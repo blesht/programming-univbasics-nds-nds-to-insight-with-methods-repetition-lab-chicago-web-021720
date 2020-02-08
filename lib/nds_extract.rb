@@ -36,7 +36,16 @@ end
 
 def total_gross(source)
  total = 0 
+ directors = list_of_directors(source)
+ total_by_director = directors_totals(source)
+ row_index = 0 
  
+ while row_index < directors.length do 
+   total += total_by_director[directors]
+   row_index += 1 
+ end 
+ total 
+   
   # Write this implementation
   #
   # Should use methods:
