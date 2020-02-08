@@ -276,5 +276,5 @@ def list_of_directors(source)
    dirlist 
 end
 
-do = list_of_directors(vm)
-puts do 
+dop = list_of_directors(vm)
+puts dop
