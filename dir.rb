@@ -277,6 +277,17 @@ def list_of_directors(source)
 end
 
 list_of_directors(vm)
+def gross_for_director(d)
+  total = 0
+  index = 0
+
+  while index < d[:movies].length do
+    total += d[:movies][index][:worldwide_gross]
+    index += 1
+  end
+
+  total
+end
 
 
 def directors_totals(source)
