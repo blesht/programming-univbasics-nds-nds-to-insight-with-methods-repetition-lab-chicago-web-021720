@@ -279,7 +279,7 @@ end
 list_of_directors(vm)
 
 
-def directors_totals(vm)
+def directors_totals(d)
   result = {}
   director_index = 0
   while director_index < source.size do
@@ -289,3 +289,5 @@ def directors_totals(vm)
   end
   puts result
 end
+
+directors_totals(vm)
