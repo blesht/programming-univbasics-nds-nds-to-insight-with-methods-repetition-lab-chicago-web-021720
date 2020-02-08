@@ -3,7 +3,7 @@
 
 
 
-[{:name=>"Stephen Spielberg",
+vm = [{:name=>"Stephen Spielberg",
   :movies=>
    [{:title=>"Jaws",
      :studio=>"Universal",
@@ -275,3 +275,5 @@ def list_of_directors(source)
   end 
   dirlist 
 end
+
+list_of_directors(vm)
