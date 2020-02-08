@@ -273,7 +273,7 @@ def list_of_directors(source)
   dirlist << source[row_index][:name]
   row_index += 1 
   end 
-  puts dirlist 
+  p dirlist 
 end
 
 list_of_directors(vm)
