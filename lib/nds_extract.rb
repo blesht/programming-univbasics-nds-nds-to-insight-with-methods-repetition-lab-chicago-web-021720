@@ -33,6 +33,10 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
+  dirlist = []
+  file = File.Open("dir.rb", "w")
+  file << source 
+  file.close 
   # Write this implementation
   #
   # Should use methods:
